@@ -1,0 +1,99 @@
+computer
+  price
+  motherboard
+  cpu
+  gpu
+  dram
+  ssd
+  hdd
+  power supply
+  tower
+
+motherboard
+  price
+  maker
+  model
+  socket
+  wireless?
+  supported cpus (chipset)
+  dram type
+  max dram speed supported
+  total dram allowed
+  power supply pin connector
+  usb 3
+  usb 2
+  pci connectors
+  pci-e connectors
+  power needed
+  dimensions
+
+cpu
+  price
+  maker
+  model
+  freq
+  cores
+  L1 cache
+  L2 cache
+  chipset supported
+  overclockable
+  power needed
+
+gpu
+  price
+  maker
+  model
+  cuda cores
+  amount dedicated dram
+  freq
+  connection
+  power needed
+  supported displays
+
+dram
+  price
+  maker
+  model
+  type (DDR3 or DDR4)
+  size
+  freq
+  transfer rate
+  for server or pc (ECC?)
+  power needed
+
+ssd
+  price
+  maker
+  model
+  size
+  freq
+  transfer rate
+  read/write rate
+  connection
+  power needed
+
+hdd
+  price
+  maker
+  model
+  size
+  freq
+  transfer rate
+  read/write rate
+  connection
+  power needed
+
+power supply
+  price
+  maker
+  model
+  power
+  rails
+  connector
+
+tower
+  price
+  maker
+  model
+  dimensions
+  

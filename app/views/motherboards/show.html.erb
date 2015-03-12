@@ -1,0 +1,84 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @motherboard.price %>
+</p>
+
+<p>
+  <strong>Maker:</strong>
+  <%= @motherboard.maker %>
+</p>
+
+<p>
+  <strong>Model:</strong>
+  <%= @motherboard.model %>
+</p>
+
+<p>
+  <strong>Socket:</strong>
+  <%= @motherboard.socket %>
+</p>
+
+<p>
+  <strong>Wireless:</strong>
+  <%= @motherboard.wireless %>
+</p>
+
+<p>
+  <strong>Chipset:</strong>
+  <%= @motherboard.chipset %>
+</p>
+
+<p>
+  <strong>Dram type:</strong>
+  <%= @motherboard.dram_type %>
+</p>
+
+<p>
+  <strong>Max dram speed supported:</strong>
+  <%= @motherboard.max_dram_speed_supported %>
+</p>
+
+<p>
+  <strong>Total dram allowed:</strong>
+  <%= @motherboard.total_dram_allowed %>
+</p>
+
+<p>
+  <strong>Power supply pin connector:</strong>
+  <%= @motherboard.power_supply_pin_connector %>
+</p>
+
+<p>
+  <strong>Usb3 ports:</strong>
+  <%= @motherboard.usb3_ports %>
+</p>
+
+<p>
+  <strong>Usb2 ports:</strong>
+  <%= @motherboard.usb2_ports %>
+</p>
+
+<p>
+  <strong>Pci ports:</strong>
+  <%= @motherboard.pci_ports %>
+</p>
+
+<p>
+  <strong>Pcie ports:</strong>
+  <%= @motherboard.pcie_ports %>
+</p>
+
+<p>
+  <strong>Power needed:</strong>
+  <%= @motherboard.power_needed %>
+</p>
+
+<p>
+  <strong>Dimensions:</strong>
+  <%= @motherboard.dimensions %>
+</p>
+
+<%= link_to 'Edit', edit_motherboard_path(@motherboard) %> |
+<%= link_to 'Back', motherboards_path %>

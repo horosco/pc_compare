@@ -1,0 +1,55 @@
+<h1>Listing motherboards</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Price</th>
+      <th>Maker</th>
+      <th>Model</th>
+      <th>Socket</th>
+      <th>Wireless</th>
+      <th>Chipset</th>
+      <th>Dram type</th>
+      <th>Max dram speed supported</th>
+      <th>Total dram allowed</th>
+      <th>Power supply pin connector</th>
+      <th>Usb3 ports</th>
+      <th>Usb2 ports</th>
+      <th>Pci ports</th>
+      <th>Pcie ports</th>
+      <th>Power needed</th>
+      <th>Dimensions</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @motherboards.each do |motherboard| %>
+      <tr>
+        <td><%= motherboard.price %></td>
+        <td><%= motherboard.maker %></td>
+        <td><%= motherboard.model %></td>
+        <td><%= motherboard.socket %></td>
+        <td><%= motherboard.wireless %></td>
+        <td><%= motherboard.chipset %></td>
+        <td><%= motherboard.dram_type %></td>
+        <td><%= motherboard.max_dram_speed_supported %></td>
+        <td><%= motherboard.total_dram_allowed %></td>
+        <td><%= motherboard.power_supply_pin_connector %></td>
+        <td><%= motherboard.usb3_ports %></td>
+        <td><%= motherboard.usb2_ports %></td>
+        <td><%= motherboard.pci_ports %></td>
+        <td><%= motherboard.pcie_ports %></td>
+        <td><%= motherboard.power_needed %></td>
+        <td><%= motherboard.dimensions %></td>
+        <td><%= link_to 'Show', motherboard %></td>
+        <td><%= link_to 'Edit', edit_motherboard_path(motherboard) %></td>
+        <td><%= link_to 'Destroy', motherboard, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Motherboard', new_motherboard_path %>

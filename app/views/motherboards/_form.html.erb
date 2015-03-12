@@ -1,0 +1,81 @@
+<%= form_for(@motherboard) do |f| %>
+  <% if @motherboard.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@motherboard.errors.count, "error") %> prohibited this motherboard from being saved:</h2>
+
+      <ul>
+      <% @motherboard.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :price %><br>
+    <%= f.number_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :maker %><br>
+    <%= f.text_field :maker %>
+  </div>
+  <div class="field">
+    <%= f.label :model %><br>
+    <%= f.text_field :model %>
+  </div>
+  <div class="field">
+    <%= f.label :socket %><br>
+    <%= f.text_field :socket %>
+  </div>
+  <div class="field">
+    <%= f.label :wireless %><br>
+    <%= f.text_field :wireless %>
+  </div>
+  <div class="field">
+    <%= f.label :chipset %><br>
+    <%= f.text_field :chipset %>
+  </div>
+  <div class="field">
+    <%= f.label :dram_type %><br>
+    <%= f.text_field :dram_type %>
+  </div>
+  <div class="field">
+    <%= f.label :max_dram_speed_supported %><br>
+    <%= f.text_field :max_dram_speed_supported %>
+  </div>
+  <div class="field">
+    <%= f.label :total_dram_allowed %><br>
+    <%= f.text_field :total_dram_allowed %>
+  </div>
+  <div class="field">
+    <%= f.label :power_supply_pin_connector %><br>
+    <%= f.text_field :power_supply_pin_connector %>
+  </div>
+  <div class="field">
+    <%= f.label :usb3_ports %><br>
+    <%= f.text_field :usb3_ports %>
+  </div>
+  <div class="field">
+    <%= f.label :usb2_ports %><br>
+    <%= f.text_field :usb2_ports %>
+  </div>
+  <div class="field">
+    <%= f.label :pci_ports %><br>
+    <%= f.text_field :pci_ports %>
+  </div>
+  <div class="field">
+    <%= f.label :pcie_ports %><br>
+    <%= f.text_field :pcie_ports %>
+  </div>
+  <div class="field">
+    <%= f.label :power_needed %><br>
+    <%= f.text_field :power_needed %>
+  </div>
+  <div class="field">
+    <%= f.label :dimensions %><br>
+    <%= f.text_field :dimensions %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
