@@ -28,28 +28,100 @@
     <%= f.text_field :socket %>
   </div>
   <div class="field">
-    <%= f.label :wireless %><br>
-    <%= f.text_field :wireless %>
-  </div>
-  <div class="field">
     <%= f.label :chipset %><br>
     <%= f.text_field :chipset %>
+  </div>
+  <div class="field">
+    <%= f.label :number_of_memory_slots %><br>
+    <%= f.text_field :number_of_memory_slots %>
   </div>
   <div class="field">
     <%= f.label :dram_type %><br>
     <%= f.text_field :dram_type %>
   </div>
   <div class="field">
-    <%= f.label :max_dram_speed_supported %><br>
-    <%= f.text_field :max_dram_speed_supported %>
+    <%= f.label :wireless %><br>
+    <%= f.text_field :wireless %>
   </div>
   <div class="field">
     <%= f.label :total_dram_allowed %><br>
     <%= f.text_field :total_dram_allowed %>
   </div>
   <div class="field">
+    <%= f.label :max_dram_speed_supported %><br>
+    <%= f.text_field :max_dram_speed_supported %>
+  </div>
+  <div class="field">
+    <%= f.label :channel_supported %><br>
+    <%= f.text_field :channel_supported %>
+  </div>
+  <div class="field">
     <%= f.label :power_supply_pin_connector %><br>
     <%= f.text_field :power_supply_pin_connector %>
+  </div>
+  <div class="field">
+    <%= f.label :pcie3x16_ports %><br>
+    <%= f.number_field :pcie3x16_ports %>
+  </div>
+  <div class="field">
+    <%= f.label :pcie2x16_ports %><br>
+    <%= f.number_field :pcie2x16_ports %>
+  </div>
+  <div class="field">
+    <%= f.label :pcie_ports %><br>
+    <%= f.text_field :pcie_ports %>
+  </div>
+  <div class="field">
+    <%= f.label :mini_card_slots %><br>
+    <%= f.number_field :mini_card_slots %>
+  </div>
+  <div class="field">
+    <%= f.label :sata_exp_ports %><br>
+    <%= f.number_field :sata_exp_ports %>
+  </div>
+  <div class="field">
+    <%= f.label :m2_ports %><br>
+    <%= f.number_field :m2_ports %>
+  </div>
+  <div class="field">
+    <%= f.label :lan_chipset %><br>
+    <%= f.text_field :lan_chipset %>
+  </div>
+  <div class="field">
+    <%= f.label :second_lan_chipset %><br>
+    <%= f.text_field :second_lan_chipset %>
+  </div>
+  <div class="field">
+    <%= f.label :max_lan_speed %><br>
+    <%= f.text_field :max_lan_speed %>
+  </div>
+  <div class="field">
+    <%= f.label :ps2_ports %><br>
+    <%= f.number_field :ps2_ports %>
+  </div>
+  <div class="field">
+    <%= f.label :dvi_i_ports %><br>
+    <%= f.number_field :dvi_i_ports %>
+  </div>
+  <div class="field">
+    <%= f.label :hdmi_ports %><br>
+    <%= f.number_field :hdmi_ports %>
+  </div>
+  <div class="field">
+    <%= f.label :display_ports %><br>
+    <%= f.number_field :display_ports %>
+  </div>
+  <div class="field">
+    <%= f.label :esata_ports %><br>
+    <%= f.number_field :esata_ports %>
+  </div>
+  <div class="field">
+    <%= f.label :s_pdif_out_ports %><br>
+    <%= f.number_field :s_pdif_out_ports %>
+  </div>
+  <div class="field">
+    <%= f.label :audio_ports %><br>
+    <%= f.number_field :audio_ports %>
   </div>
   <div class="field">
     <%= f.label :usb3_ports %><br>
@@ -64,8 +136,8 @@
     <%= f.text_field :pci_ports %>
   </div>
   <div class="field">
-    <%= f.label :pcie_ports %><br>
-    <%= f.text_field :pcie_ports %>
+    <%= f.label :other_internal_ports %><br>
+    <%= f.number_field :other_internal_ports %>
   </div>
   <div class="field">
     <%= f.label :power_needed %><br>

@@ -7,16 +7,36 @@
       <th>Maker</th>
       <th>Model</th>
       <th>Socket</th>
-      <th>Wireless</th>
       <th>Chipset</th>
+      <th>Number of memory slots</th>
       <th>Dram type</th>
+      <th>Wireless</th>
       <th>Max dram speed supported</th>
       <th>Total dram allowed</th>
+      <th>Channel supported</th>
       <th>Power supply pin connector</th>
+      <th>Pcie3x16 ports</th>
+      <th>Pcie2x16 ports</th>
+      <th>Pcie ports</th>
+      <th>Mini card slots</th>
+      <th>Sata exp ports</th>
+      <th>M2 ports</th>
+      <th>Lan chipset</th>
+      <th>Second lan chipset</th>
+      <th>Max lan speed</th>
+      <th>Ps2 ports</th>
+      <th>Dvi i ports</th>
+      <th>Hdmi ports</th>
+      <th>Display ports</th>
+      <th>Esata ports</th>
+      <th>S pdif out ports</th>
+      <th>Audio ports</th>
+
       <th>Usb3 ports</th>
       <th>Usb2 ports</th>
       <th>Pci ports</th>
-      <th>Pcie ports</th>
+      <th>Other internal ports</th>
+
       <th>Power needed</th>
       <th>Dimensions</th>
       <th colspan="3"></th>
@@ -32,14 +52,34 @@
         <td><%= motherboard.socket %></td>
         <td><%= motherboard.wireless %></td>
         <td><%= motherboard.chipset %></td>
+	<td><%= motherboard.number_of_memory_slots %></td>
         <td><%= motherboard.dram_type %></td>
         <td><%= motherboard.max_dram_speed_supported %></td>
         <td><%= motherboard.total_dram_allowed %></td>
+	<td><%= motherboard.channel_supported %></td>
         <td><%= motherboard.power_supply_pin_connector %></td>
+	<td><%= motherboard.pcie3x16_ports %></td>
+	<td><%= motherboard.pcie2x16_ports %></td>
+        <td><%= motherboard.pcie_ports %></td>
+	<td><%= motherboard.mini_card_slots %></td>
+	<td><%= motherboard.sata_exp_ports %></td>
+	<td><%= motherboard.m2_ports %></td>
+	<td><%= motherboard.lan_chipset %></td>
+	<td><%= motherboard.second_lan_chipset %></td>
+	<td><%= motherboard.max_lan_speed %></td>
+	<td><%= motherboard.ps2_ports %></td>
+	<td><%= motherboard.dvi_i_ports %></td>
+	<td><%= motherboard.hdmi_ports %></td>
+	<td><%= motherboard.display_ports %></td>
+	<td><%= motherboard.esata_ports %></td>
+	<td><%= motherboard.s_pdif_out_ports %></td>
+	<td><%= motherboard.audio_ports %></td>
+
         <td><%= motherboard.usb3_ports %></td>
         <td><%= motherboard.usb2_ports %></td>
         <td><%= motherboard.pci_ports %></td>
-        <td><%= motherboard.pcie_ports %></td>
+	<td><%= motherboard.other_internal_ports %></td>
+
         <td><%= motherboard.power_needed %></td>
         <td><%= motherboard.dimensions %></td>
         <td><%= link_to 'Show', motherboard %></td>
