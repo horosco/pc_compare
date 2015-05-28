@@ -1,5 +1,6 @@
 class AddColumnsToMotherboards < ActiveRecord::Migration
   def change
+    add_column :motherboards, :number_of_memory_slots, :string
     add_column :motherboards, :channel_supported, :string
     add_column :motherboards, :pcie3x16_ports, :integer
     add_column :motherboards, :pcie2x16_ports, :integer

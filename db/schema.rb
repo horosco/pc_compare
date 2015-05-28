@@ -11,94 +11,94 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150414042231) do
+ActiveRecord::Schema.define(version: 20150427042323) do
 
-  create_table "cpus", force: true do |t|
+  create_table "cpus", force: :cascade do |t|
     t.integer  "price"
-    t.string   "maker"
-    t.string   "model"
-    t.string   "freq"
+    t.string   "maker",         limit: 255
+    t.string   "model",         limit: 255
+    t.string   "freq",          limit: 255
     t.integer  "cores"
-    t.string   "L1_cache"
-    t.string   "L2_cache"
-    t.string   "chipset"
-    t.string   "overclockable"
-    t.string   "power_needed"
+    t.string   "L1_cache",      limit: 255
+    t.string   "L2_cache",      limit: 255
+    t.string   "chipset",       limit: 255
+    t.string   "overclockable", limit: 255
+    t.string   "power_needed",  limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "drams", force: true do |t|
+  create_table "drams", force: :cascade do |t|
     t.integer  "price"
-    t.string   "maker"
-    t.string   "model"
-    t.string   "type"
-    t.string   "size"
-    t.string   "freq"
-    t.string   "transfer_rate"
-    t.string   "for_server_or_pc"
-    t.string   "power_needed"
+    t.string   "maker",            limit: 255
+    t.string   "model",            limit: 255
+    t.string   "type",             limit: 255
+    t.string   "size",             limit: 255
+    t.string   "freq",             limit: 255
+    t.string   "transfer_rate",    limit: 255
+    t.string   "for_server_or_pc", limit: 255
+    t.string   "power_needed",     limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "gpus", force: true do |t|
+  create_table "gpus", force: :cascade do |t|
     t.integer  "price"
-    t.string   "maker"
-    t.string   "model"
-    t.string   "cuda_cores"
-    t.string   "dram"
-    t.string   "freq"
-    t.string   "connection"
-    t.string   "power_needed"
+    t.string   "maker",              limit: 255
+    t.string   "model",              limit: 255
+    t.string   "cuda_cores",         limit: 255
+    t.string   "dram",               limit: 255
+    t.string   "freq",               limit: 255
+    t.string   "connection",         limit: 255
+    t.string   "power_needed",       limit: 255
     t.integer  "supported_displays"
-    t.string   "flops"
+    t.string   "flops",              limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "hdds", force: true do |t|
+  create_table "hdds", force: :cascade do |t|
     t.integer  "price"
-    t.string   "maker"
-    t.string   "model"
-    t.string   "size"
-    t.string   "freq"
-    t.string   "transfer_rate"
-    t.string   "r_w_rate"
-    t.string   "connection"
-    t.string   "power_needed"
+    t.string   "maker",         limit: 255
+    t.string   "model",         limit: 255
+    t.string   "size",          limit: 255
+    t.string   "freq",          limit: 255
+    t.string   "transfer_rate", limit: 255
+    t.string   "r_w_rate",      limit: 255
+    t.string   "connection",    limit: 255
+    t.string   "power_needed",  limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "motherboards", force: true do |t|
+  create_table "motherboards", force: :cascade do |t|
     t.integer  "price"
-    t.string   "maker"
-    t.string   "model"
-    t.string   "socket"
-    t.string   "wireless"
-    t.string   "chipset"
-    t.string   "dram_type"
-    t.string   "max_dram_speed_supported"
-    t.string   "total_dram_allowed"
-    t.string   "power_supply_pin_connector"
-    t.string   "usb3_ports"
-    t.string   "usb2_ports"
-    t.string   "pci_ports"
-    t.string   "pcie_ports"
-    t.string   "power_needed"
-    t.string   "dimensions"
+    t.string   "maker",                      limit: 255
+    t.string   "model",                      limit: 255
+    t.string   "socket",                     limit: 255
+    t.string   "wireless",                   limit: 255
+    t.string   "chipset",                    limit: 255
+    t.string   "dram_type",                  limit: 255
+    t.string   "max_dram_speed_supported",   limit: 255
+    t.string   "total_dram_allowed",         limit: 255
+    t.string   "power_supply_pin_connector", limit: 255
+    t.string   "usb3_ports",                 limit: 255
+    t.string   "usb2_ports",                 limit: 255
+    t.string   "pci_ports",                  limit: 255
+    t.string   "pcie_ports",                 limit: 255
+    t.string   "power_needed",               limit: 255
+    t.string   "dimensions",                 limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "channel_supported"
+    t.string   "channel_supported",          limit: 255
     t.integer  "pcie3x16_ports"
     t.integer  "pcie2x16_ports"
     t.integer  "mini_card_slots"
     t.integer  "sata_exp_ports"
     t.integer  "m2_ports"
-    t.string   "lan_chipset"
-    t.string   "second_lan_chipset"
-    t.string   "max_lan_speed"
+    t.string   "lan_chipset",                limit: 255
+    t.string   "second_lan_chipset",         limit: 255
+    t.string   "max_lan_speed",              limit: 255
     t.integer  "ps2_ports"
     t.integer  "dvi_i_ports"
     t.integer  "hdmi_ports"
@@ -106,39 +106,40 @@ ActiveRecord::Schema.define(version: 20150414042231) do
     t.integer  "esata_ports"
     t.integer  "s_pdif_out_ports"
     t.integer  "audio_ports"
-    t.string   "other_internal_ports"
+    t.string   "other_internal_ports",       limit: 255
+    t.string   "number_of_memory_slots"
   end
 
-  create_table "powersupplies", force: true do |t|
+  create_table "powersupplies", force: :cascade do |t|
     t.integer  "price"
-    t.string   "maker"
-    t.string   "model"
-    t.string   "power"
-    t.string   "rails"
-    t.string   "connection"
+    t.string   "maker",      limit: 255
+    t.string   "model",      limit: 255
+    t.string   "power",      limit: 255
+    t.string   "rails",      limit: 255
+    t.string   "connection", limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "ssds", force: true do |t|
+  create_table "ssds", force: :cascade do |t|
     t.integer  "price"
-    t.string   "maker"
-    t.string   "model"
-    t.string   "size"
-    t.string   "freq"
-    t.string   "transfer_rate"
-    t.string   "r_w_rate"
-    t.string   "connection"
-    t.string   "power_needed"
+    t.string   "maker",         limit: 255
+    t.string   "model",         limit: 255
+    t.string   "size",          limit: 255
+    t.string   "freq",          limit: 255
+    t.string   "transfer_rate", limit: 255
+    t.string   "r_w_rate",      limit: 255
+    t.string   "connection",    limit: 255
+    t.string   "power_needed",  limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "towers", force: true do |t|
+  create_table "towers", force: :cascade do |t|
     t.integer  "price"
-    t.string   "maker"
-    t.string   "model"
-    t.string   "dimensions"
+    t.string   "maker",      limit: 255
+    t.string   "model",      limit: 255
+    t.string   "dimensions", limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
   end
