@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150530034234) do
+ActiveRecord::Schema.define(version: 20150530191723) do
 
   create_table "cpus", force: :cascade do |t|
     t.string   "name"
@@ -54,17 +54,29 @@ ActiveRecord::Schema.define(version: 20150530034234) do
 
   create_table "gpus", force: :cascade do |t|
     t.integer  "price"
-    t.string   "maker",              limit: 255
-    t.string   "model",              limit: 255
-    t.string   "cuda_cores",         limit: 255
-    t.string   "dram",               limit: 255
-    t.string   "freq",               limit: 255
-    t.string   "connection",         limit: 255
-    t.string   "power_needed",       limit: 255
-    t.integer  "supported_displays"
-    t.string   "flops",              limit: 255
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.string   "name"
+    t.string   "maker"
+    t.string   "model"
+    t.string   "interface"
+    t.string   "gpu_ver"
+    t.string   "core_clock"
+    t.string   "boost_clock"
+    t.integer  "cuda_cores"
+    t.string   "mem_clock"
+    t.string   "memory_size"
+    t.string   "mem_interface"
+    t.string   "mem_type"
+    t.string   "directx_support"
+    t.string   "opengl_support"
+    t.integer  "hdmi_ports"
+    t.integer  "dvi_i_ports"
+    t.integer  "dvi_d_ports"
+    t.string   "max_resolution"
+    t.string   "sli_support"
+    t.string   "cooler"
+    t.string   "system_reqs"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
   end
 
   create_table "hdds", force: :cascade do |t|

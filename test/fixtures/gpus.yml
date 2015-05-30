@@ -1,0 +1,49 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  price: 1
+  name: MyString
+  maker: MyString
+  model: MyString
+  interface: MyString
+  gpu_ver: MyString
+  core_clock: MyString
+  boost_clock: MyString
+  cuda_cores: 1
+  mem_clock: MyString
+  memory_size: MyString
+  mem_interface: MyString
+  mem_type: MyString
+  directx_support: MyString
+  opengl_support: MyString
+  hdmi_ports: 1
+  dvi_i_ports: 1
+  dvi_d_ports: 1
+  max_resolution: MyString
+  sli_support: MyString
+  cooler: MyString
+  system_reqs: MyString
+
+two:
+  price: 1
+  name: MyString
+  maker: MyString
+  model: MyString
+  interface: MyString
+  gpu_ver: MyString
+  core_clock: MyString
+  boost_clock: MyString
+  cuda_cores: 1
+  mem_clock: MyString
+  memory_size: MyString
+  mem_interface: MyString
+  mem_type: MyString
+  directx_support: MyString
+  opengl_support: MyString
+  hdmi_ports: 1
+  dvi_i_ports: 1
+  dvi_d_ports: 1
+  max_resolution: MyString
+  sli_support: MyString
+  cooler: MyString
+  system_reqs: MyString

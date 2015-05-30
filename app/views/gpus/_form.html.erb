@@ -1,0 +1,105 @@
+<%= form_for(@gpu) do |f| %>
+  <% if @gpu.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@gpu.errors.count, "error") %> prohibited this gpu from being saved:</h2>
+
+      <ul>
+      <% @gpu.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :price %><br>
+    <%= f.number_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :maker %><br>
+    <%= f.text_field :maker %>
+  </div>
+  <div class="field">
+    <%= f.label :model %><br>
+    <%= f.text_field :model %>
+  </div>
+  <div class="field">
+    <%= f.label :interface %><br>
+    <%= f.text_field :interface %>
+  </div>
+  <div class="field">
+    <%= f.label :gpu_ver %><br>
+    <%= f.text_field :gpu_ver %>
+  </div>
+  <div class="field">
+    <%= f.label :core_clock %><br>
+    <%= f.text_field :core_clock %>
+  </div>
+  <div class="field">
+    <%= f.label :boost_clock %><br>
+    <%= f.text_field :boost_clock %>
+  </div>
+  <div class="field">
+    <%= f.label :cuda_cores %><br>
+    <%= f.number_field :cuda_cores %>
+  </div>
+  <div class="field">
+    <%= f.label :mem_clock %><br>
+    <%= f.text_field :mem_clock %>
+  </div>
+  <div class="field">
+    <%= f.label :memory_size %><br>
+    <%= f.text_field :memory_size %>
+  </div>
+  <div class="field">
+    <%= f.label :mem_interface %><br>
+    <%= f.text_field :mem_interface %>
+  </div>
+  <div class="field">
+    <%= f.label :mem_type %><br>
+    <%= f.text_field :mem_type %>
+  </div>
+  <div class="field">
+    <%= f.label :directx_support %><br>
+    <%= f.text_field :directx_support %>
+  </div>
+  <div class="field">
+    <%= f.label :opengl_support %><br>
+    <%= f.text_field :opengl_support %>
+  </div>
+  <div class="field">
+    <%= f.label :hdmi_ports %><br>
+    <%= f.number_field :hdmi_ports %>
+  </div>
+  <div class="field">
+    <%= f.label :dvi_i_ports %><br>
+    <%= f.number_field :dvi_i_ports %>
+  </div>
+  <div class="field">
+    <%= f.label :dvi_d_ports %><br>
+    <%= f.number_field :dvi_d_ports %>
+  </div>
+  <div class="field">
+    <%= f.label :max_resolution %><br>
+    <%= f.text_field :max_resolution %>
+  </div>
+  <div class="field">
+    <%= f.label :sli_support %><br>
+    <%= f.text_field :sli_support %>
+  </div>
+  <div class="field">
+    <%= f.label :cooler %><br>
+    <%= f.text_field :cooler %>
+  </div>
+  <div class="field">
+    <%= f.label :system_reqs %><br>
+    <%= f.text_field :system_reqs %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

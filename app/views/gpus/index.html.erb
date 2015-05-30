@@ -1,0 +1,69 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Gpus</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Price</th>
+      <th>Name</th>
+      <th>Maker</th>
+      <th>Model</th>
+      <th>Interface</th>
+      <th>Gpu ver</th>
+      <th>Core clock</th>
+      <th>Boost clock</th>
+      <th>Cuda cores</th>
+      <th>Mem clock</th>
+      <th>Memory size</th>
+      <th>Mem interface</th>
+      <th>Mem type</th>
+      <th>Directx support</th>
+      <th>Opengl support</th>
+      <th>Hdmi ports</th>
+      <th>Dvi i ports</th>
+      <th>Dvi d ports</th>
+      <th>Max resolution</th>
+      <th>Sli support</th>
+      <th>Cooler</th>
+      <th>System reqs</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @gpus.each do |gpu| %>
+      <tr>
+        <td><%= gpu.price %></td>
+        <td><%= gpu.name %></td>
+        <td><%= gpu.maker %></td>
+        <td><%= gpu.model %></td>
+        <td><%= gpu.interface %></td>
+        <td><%= gpu.gpu_ver %></td>
+        <td><%= gpu.core_clock %></td>
+        <td><%= gpu.boost_clock %></td>
+        <td><%= gpu.cuda_cores %></td>
+        <td><%= gpu.mem_clock %></td>
+        <td><%= gpu.memory_size %></td>
+        <td><%= gpu.mem_interface %></td>
+        <td><%= gpu.mem_type %></td>
+        <td><%= gpu.directx_support %></td>
+        <td><%= gpu.opengl_support %></td>
+        <td><%= gpu.hdmi_ports %></td>
+        <td><%= gpu.dvi_i_ports %></td>
+        <td><%= gpu.dvi_d_ports %></td>
+        <td><%= gpu.max_resolution %></td>
+        <td><%= gpu.sli_support %></td>
+        <td><%= gpu.cooler %></td>
+        <td><%= gpu.system_reqs %></td>
+        <td><%= link_to 'Show', gpu %></td>
+        <td><%= link_to 'Edit', edit_gpu_path(gpu) %></td>
+        <td><%= link_to 'Destroy', gpu, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Gpu', new_gpu_path %>
