@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @ssd.price %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @ssd.name %>
+</p>
+
+<p>
+  <strong>Model:</strong>
+  <%= @ssd.model %>
+</p>
+
+<p>
+  <strong>Form factor:</strong>
+  <%= @ssd.form_factor %>
+</p>
+
+<p>
+  <strong>Size:</strong>
+  <%= @ssd.size %>
+</p>
+
+<p>
+  <strong>Connection:</strong>
+  <%= @ssd.connection %>
+</p>
+
+<%= link_to 'Edit', edit_ssd_path(@ssd) %> |
+<%= link_to 'Back', ssds_path %>

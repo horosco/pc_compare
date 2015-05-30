@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150529022105) do
+ActiveRecord::Schema.define(version: 20150530034234) do
 
   create_table "cpus", force: :cascade do |t|
     t.string   "name"
@@ -133,16 +133,13 @@ ActiveRecord::Schema.define(version: 20150529022105) do
 
   create_table "ssds", force: :cascade do |t|
     t.integer  "price"
-    t.string   "maker",         limit: 255
-    t.string   "model",         limit: 255
-    t.string   "size",          limit: 255
-    t.string   "freq",          limit: 255
-    t.string   "transfer_rate", limit: 255
-    t.string   "r_w_rate",      limit: 255
-    t.string   "connection",    limit: 255
-    t.string   "power_needed",  limit: 255
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.string   "name"
+    t.string   "model"
+    t.string   "form_factor"
+    t.string   "size"
+    t.string   "connection"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   create_table "towers", force: :cascade do |t|

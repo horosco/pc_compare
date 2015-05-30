@@ -1,0 +1,41 @@
+<%= form_for(@ssd) do |f| %>
+  <% if @ssd.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@ssd.errors.count, "error") %> prohibited this ssd from being saved:</h2>
+
+      <ul>
+      <% @ssd.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :price %><br>
+    <%= f.number_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :model %><br>
+    <%= f.text_field :model %>
+  </div>
+  <div class="field">
+    <%= f.label :form_factor %><br>
+    <%= f.text_field :form_factor %>
+  </div>
+  <div class="field">
+    <%= f.label :size %><br>
+    <%= f.text_field :size %>
+  </div>
+  <div class="field">
+    <%= f.label :connection %><br>
+    <%= f.text_field :connection %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

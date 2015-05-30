@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :ssds
+
   resources :cpus
 
   resources :motherboards
