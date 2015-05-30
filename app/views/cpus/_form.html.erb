@@ -1,0 +1,97 @@
+<%= form_for(@cpu) do |f| %>
+  <% if @cpu.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@cpu.errors.count, "error") %> prohibited this cpu from being saved:</h2>
+
+      <ul>
+      <% @cpu.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :price %><br>
+    <%= f.number_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :model %><br>
+    <%= f.text_field :model %>
+  </div>
+  <div class="field">
+    <%= f.label :socket %><br>
+    <%= f.text_field :socket %>
+  </div>
+  <div class="field">
+    <%= f.label :cores %><br>
+    <%= f.number_field :cores %>
+  </div>
+  <div class="field">
+    <%= f.label :threads %><br>
+    <%= f.number_field :threads %>
+  </div>
+  <div class="field">
+    <%= f.label :operating_frequency %><br>
+    <%= f.text_field :operating_frequency %>
+  </div>
+  <div class="field">
+    <%= f.label :max_frequency %><br>
+    <%= f.text_field :max_frequency %>
+  </div>
+  <div class="field">
+    <%= f.label :l2_cache %><br>
+    <%= f.text_field :l2_cache %>
+  </div>
+  <div class="field">
+    <%= f.label :l3_cache %><br>
+    <%= f.text_field :l3_cache %>
+  </div>
+  <div class="field">
+    <%= f.label :tech_node %><br>
+    <%= f.text_field :tech_node %>
+  </div>
+  <div class="field">
+    <%= f.label :supports_64bits %><br>
+    <%= f.text_field :supports_64bits %>
+  </div>
+  <div class="field">
+    <%= f.label :supports_hyper_threading %><br>
+    <%= f.text_field :supports_hyper_threading %>
+  </div>
+  <div class="field">
+    <%= f.label :supports_virtualization %><br>
+    <%= f.text_field :supports_virtualization %>
+  </div>
+  <div class="field">
+    <%= f.label :integrated_graphics %><br>
+    <%= f.text_field :integrated_graphics %>
+  </div>
+  <div class="field">
+    <%= f.label :graphics_base_frequency %><br>
+    <%= f.text_field :graphics_base_frequency %>
+  </div>
+  <div class="field">
+    <%= f.label :graphics_max_frequency %><br>
+    <%= f.text_field :graphics_max_frequency %>
+  </div>
+  <div class="field">
+    <%= f.label :pcie_rev %><br>
+    <%= f.text_field :pcie_rev %>
+  </div>
+  <div class="field">
+    <%= f.label :max_pcie_lanes %><br>
+    <%= f.number_field :max_pcie_lanes %>
+  </div>
+  <div class="field">
+    <%= f.label :cooling_device %><br>
+    <%= f.text_field :cooling_device %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

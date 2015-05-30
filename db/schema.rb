@@ -11,21 +11,31 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150427042323) do
+ActiveRecord::Schema.define(version: 20150529022105) do
 
   create_table "cpus", force: :cascade do |t|
-    t.integer  "price"
-    t.string   "maker",         limit: 255
-    t.string   "model",         limit: 255
-    t.string   "freq",          limit: 255
+    t.string   "name"
+    t.string   "model"
+    t.string   "socket"
     t.integer  "cores"
-    t.string   "L1_cache",      limit: 255
-    t.string   "L2_cache",      limit: 255
-    t.string   "chipset",       limit: 255
-    t.string   "overclockable", limit: 255
-    t.string   "power_needed",  limit: 255
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.integer  "threads"
+    t.string   "operating_frequency"
+    t.string   "max_frequency"
+    t.string   "l2_cache"
+    t.string   "l3_cache"
+    t.string   "tech_node"
+    t.string   "supports_64bits"
+    t.string   "supports_hyper_threading"
+    t.string   "supports_virtualization"
+    t.string   "integrated_graphics"
+    t.string   "graphics_base_frequency"
+    t.string   "graphics_max_frequency"
+    t.string   "pcie_rev"
+    t.integer  "max_pcie_lanes"
+    t.string   "cooling_device"
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+    t.integer  "price"
   end
 
   create_table "drams", force: :cascade do |t|

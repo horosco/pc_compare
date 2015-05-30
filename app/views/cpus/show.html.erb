@@ -1,0 +1,103 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @cpu.price %>
+</p>
+<p>
+  <strong>Name:</strong>
+  <%= @cpu.name %>
+</p>
+
+<p>
+  <strong>Model:</strong>
+  <%= @cpu.model %>
+</p>
+
+<p>
+  <strong>Socket:</strong>
+  <%= @cpu.socket %>
+</p>
+
+<p>
+  <strong>Cores:</strong>
+  <%= @cpu.cores %>
+</p>
+
+<p>
+  <strong>Threads:</strong>
+  <%= @cpu.threads %>
+</p>
+
+<p>
+  <strong>Operating frequency:</strong>
+  <%= @cpu.operating_frequency %>
+</p>
+
+<p>
+  <strong>Max frequency:</strong>
+  <%= @cpu.max_frequency %>
+</p>
+
+<p>
+  <strong>L2 cache:</strong>
+  <%= @cpu.l2_cache %>
+</p>
+
+<p>
+  <strong>L3 cache:</strong>
+  <%= @cpu.l3_cache %>
+</p>
+
+<p>
+  <strong>Tech node:</strong>
+  <%= @cpu.tech_node %>
+</p>
+
+<p>
+  <strong>Supports 64bits:</strong>
+  <%= @cpu.supports_64bits %>
+</p>
+
+<p>
+  <strong>Supports hyper threading:</strong>
+  <%= @cpu.supports_hyper_threading %>
+</p>
+
+<p>
+  <strong>Supports virtualization:</strong>
+  <%= @cpu.supports_virtualization %>
+</p>
+
+<p>
+  <strong>Integrated graphics:</strong>
+  <%= @cpu.integrated_graphics %>
+</p>
+
+<p>
+  <strong>Graphics base frequency:</strong>
+  <%= @cpu.graphics_base_frequency %>
+</p>
+
+<p>
+  <strong>Graphics max frequency:</strong>
+  <%= @cpu.graphics_max_frequency %>
+</p>
+
+<p>
+  <strong>Pcie rev:</strong>
+  <%= @cpu.pcie_rev %>
+</p>
+
+<p>
+  <strong>Max pcie lanes:</strong>
+  <%= @cpu.max_pcie_lanes %>
+</p>
+
+<p>
+  <strong>Cooling device:</strong>
+  <%= @cpu.cooling_device %>
+</p>
+
+<%= link_to 'Edit', edit_cpu_path(@cpu) %> |
+<%= link_to 'Back', cpus_path %>

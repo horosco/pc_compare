@@ -1,0 +1,43 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  model: MyString
+  socket: MyString
+  cores: 1
+  threads: 1
+  operating_frequency: MyString
+  max_frequency: MyString
+  l2_cache: MyString
+  l3_cache: MyString
+  tech_node: MyString
+  supports_64bits: MyString
+  supports_hyper_threading: MyString
+  supports_virtualization: MyString
+  integrated_graphics: MyString
+  graphics_base_frequency: MyString
+  graphics_max_frequency: MyString
+  pcie_rev: MyString
+  max_pcie_lanes: 1
+  cooling_device: MyString
+
+two:
+  name: MyString
+  model: MyString
+  socket: MyString
+  cores: 1
+  threads: 1
+  operating_frequency: MyString
+  max_frequency: MyString
+  l2_cache: MyString
+  l3_cache: MyString
+  tech_node: MyString
+  supports_64bits: MyString
+  supports_hyper_threading: MyString
+  supports_virtualization: MyString
+  integrated_graphics: MyString
+  graphics_base_frequency: MyString
+  graphics_max_frequency: MyString
+  pcie_rev: MyString
+  max_pcie_lanes: 1
+  cooling_device: MyString
