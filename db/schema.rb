@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150530191723) do
+ActiveRecord::Schema.define(version: 20150530202703) do
 
   create_table "cpus", force: :cascade do |t|
     t.string   "name"
@@ -40,16 +40,18 @@ ActiveRecord::Schema.define(version: 20150530191723) do
 
   create_table "drams", force: :cascade do |t|
     t.integer  "price"
-    t.string   "maker",            limit: 255
-    t.string   "model",            limit: 255
-    t.string   "type",             limit: 255
-    t.string   "size",             limit: 255
-    t.string   "freq",             limit: 255
-    t.string   "transfer_rate",    limit: 255
-    t.string   "for_server_or_pc", limit: 255
-    t.string   "power_needed",     limit: 255
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.string   "maker"
+    t.string   "series"
+    t.string   "model"
+    t.string   "size"
+    t.string   "speed"
+    t.integer  "cas_latency"
+    t.string   "timing"
+    t.string   "voltage"
+    t.string   "ecc_support"
+    t.string   "notes"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   create_table "gpus", force: :cascade do |t|

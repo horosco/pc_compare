@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @dram.price %>
+</p>
+
+<p>
+  <strong>Maker:</strong>
+  <%= @dram.maker %>
+</p>
+
+<p>
+  <strong>Series:</strong>
+  <%= @dram.series %>
+</p>
+
+<p>
+  <strong>Model:</strong>
+  <%= @dram.model %>
+</p>
+
+<p>
+  <strong>Size:</strong>
+  <%= @dram.size %>
+</p>
+
+<p>
+  <strong>Speed:</strong>
+  <%= @dram.speed %>
+</p>
+
+<p>
+  <strong>Cas latency:</strong>
+  <%= @dram.cas_latency %>
+</p>
+
+<p>
+  <strong>Timing:</strong>
+  <%= @dram.timing %>
+</p>
+
+<p>
+  <strong>Voltage:</strong>
+  <%= @dram.voltage %>
+</p>
+
+<p>
+  <strong>Ecc support:</strong>
+  <%= @dram.ecc_support %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @dram.notes %>
+</p>
+
+<%= link_to 'Edit', edit_dram_path(@dram) %> |
+<%= link_to 'Back', drams_path %>

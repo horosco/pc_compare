@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Drams</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Price</th>
+      <th>Maker</th>
+      <th>Series</th>
+      <th>Model</th>
+      <th>Size</th>
+      <th>Speed</th>
+      <th>Cas latency</th>
+      <th>Timing</th>
+      <th>Voltage</th>
+      <th>Ecc support</th>
+      <th>Notes</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @drams.each do |dram| %>
+      <tr>
+        <td><%= dram.price %></td>
+        <td><%= dram.maker %></td>
+        <td><%= dram.series %></td>
+        <td><%= dram.model %></td>
+        <td><%= dram.size %></td>
+        <td><%= dram.speed %></td>
+        <td><%= dram.cas_latency %></td>
+        <td><%= dram.timing %></td>
+        <td><%= dram.voltage %></td>
+        <td><%= dram.ecc_support %></td>
+        <td><%= dram.notes %></td>
+        <td><%= link_to 'Show', dram %></td>
+        <td><%= link_to 'Edit', edit_dram_path(dram) %></td>
+        <td><%= link_to 'Destroy', dram, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Dram', new_dram_path %>
