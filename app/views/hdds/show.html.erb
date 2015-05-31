@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @hdd.price %>
+</p>
+
+<p>
+  <strong>Maker:</strong>
+  <%= @hdd.maker %>
+</p>
+
+<p>
+  <strong>Series:</strong>
+  <%= @hdd.series %>
+</p>
+
+<p>
+  <strong>Model:</strong>
+  <%= @hdd.model %>
+</p>
+
+<p>
+  <strong>Size:</strong>
+  <%= @hdd.size %>
+</p>
+
+<p>
+  <strong>Interface:</strong>
+  <%= @hdd.interface %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @hdd.notes %>
+</p>
+
+<%= link_to 'Edit', edit_hdd_path(@hdd) %> |
+<%= link_to 'Back', hdds_path %>
