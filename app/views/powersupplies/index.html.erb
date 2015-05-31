@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Powersupplies</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Price</th>
+      <th>Maker</th>
+      <th>Model</th>
+      <th>Ps type</th>
+      <th>Max power</th>
+      <th>Connector</th>
+      <th>Rails 12v</th>
+      <th>Intel support</th>
+      <th>Sli support</th>
+      <th>Output ratings</th>
+      <th>Dimensions</th>
+      <th>Notes</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @powersupplies.each do |powersupply| %>
+      <tr>
+        <td><%= powersupply.price %></td>
+        <td><%= powersupply.maker %></td>
+        <td><%= powersupply.model %></td>
+        <td><%= powersupply.ps_type %></td>
+        <td><%= powersupply.max_power %></td>
+        <td><%= powersupply.connector %></td>
+        <td><%= powersupply.rails_12v %></td>
+        <td><%= powersupply.intel_support %></td>
+        <td><%= powersupply.sli_support %></td>
+        <td><%= powersupply.output_ratings %></td>
+        <td><%= powersupply.dimensions %></td>
+        <td><%= powersupply.notes %></td>
+        <td><%= link_to 'Show', powersupply %></td>
+        <td><%= link_to 'Edit', edit_powersupply_path(powersupply) %></td>
+        <td><%= link_to 'Destroy', powersupply, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Powersupply', new_powersupply_path %>

@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  price: 1
+  maker: MyString
+  model: MyString
+  ps_type: MyString
+  max_power: MyString
+  connector: MyString
+  rails_12v: MyString
+  intel_support: MyString
+  sli_support: MyString
+  output_ratings: MyString
+  dimensions: MyString
+  notes: MyString
+
+two:
+  price: 1
+  maker: MyString
+  model: MyString
+  ps_type: MyString
+  max_power: MyString
+  connector: MyString
+  rails_12v: MyString
+  intel_support: MyString
+  sli_support: MyString
+  output_ratings: MyString
+  dimensions: MyString
+  notes: MyString

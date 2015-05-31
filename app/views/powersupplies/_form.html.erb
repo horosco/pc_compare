@@ -1,0 +1,65 @@
+<%= form_for(@powersupply) do |f| %>
+  <% if @powersupply.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@powersupply.errors.count, "error") %> prohibited this powersupply from being saved:</h2>
+
+      <ul>
+      <% @powersupply.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :price %><br>
+    <%= f.number_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :maker %><br>
+    <%= f.text_field :maker %>
+  </div>
+  <div class="field">
+    <%= f.label :model %><br>
+    <%= f.text_field :model %>
+  </div>
+  <div class="field">
+    <%= f.label :ps_type %><br>
+    <%= f.text_field :ps_type %>
+  </div>
+  <div class="field">
+    <%= f.label :max_power %><br>
+    <%= f.text_field :max_power %>
+  </div>
+  <div class="field">
+    <%= f.label :connector %><br>
+    <%= f.text_field :connector %>
+  </div>
+  <div class="field">
+    <%= f.label :rails_12v %><br>
+    <%= f.text_field :rails_12v %>
+  </div>
+  <div class="field">
+    <%= f.label :intel_support %><br>
+    <%= f.text_field :intel_support %>
+  </div>
+  <div class="field">
+    <%= f.label :sli_support %><br>
+    <%= f.text_field :sli_support %>
+  </div>
+  <div class="field">
+    <%= f.label :output_ratings %><br>
+    <%= f.text_field :output_ratings %>
+  </div>
+  <div class="field">
+    <%= f.label :dimensions %><br>
+    <%= f.text_field :dimensions %>
+  </div>
+  <div class="field">
+    <%= f.label :notes %><br>
+    <%= f.text_field :notes %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

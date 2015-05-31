@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @powersupply.price %>
+</p>
+
+<p>
+  <strong>Maker:</strong>
+  <%= @powersupply.maker %>
+</p>
+
+<p>
+  <strong>Model:</strong>
+  <%= @powersupply.model %>
+</p>
+
+<p>
+  <strong>Ps type:</strong>
+  <%= @powersupply.ps_type %>
+</p>
+
+<p>
+  <strong>Max power:</strong>
+  <%= @powersupply.max_power %>
+</p>
+
+<p>
+  <strong>Connector:</strong>
+  <%= @powersupply.connector %>
+</p>
+
+<p>
+  <strong>Rails 12v:</strong>
+  <%= @powersupply.rails_12v %>
+</p>
+
+<p>
+  <strong>Intel support:</strong>
+  <%= @powersupply.intel_support %>
+</p>
+
+<p>
+  <strong>Sli support:</strong>
+  <%= @powersupply.sli_support %>
+</p>
+
+<p>
+  <strong>Output ratings:</strong>
+  <%= @powersupply.output_ratings %>
+</p>
+
+<p>
+  <strong>Dimensions:</strong>
+  <%= @powersupply.dimensions %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @powersupply.notes %>
+</p>
+
+<%= link_to 'Edit', edit_powersupply_path(@powersupply) %> |
+<%= link_to 'Back', powersupplies_path %>
