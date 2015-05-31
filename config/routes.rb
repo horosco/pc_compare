@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :towers
+
   resources :powersupplies
 
   resources :hdds

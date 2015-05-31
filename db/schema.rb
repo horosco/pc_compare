@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150531021009) do
+ActiveRecord::Schema.define(version: 20150531025521) do
 
   create_table "cpus", force: :cascade do |t|
     t.string   "name"
@@ -162,11 +162,12 @@ ActiveRecord::Schema.define(version: 20150531021009) do
 
   create_table "towers", force: :cascade do |t|
     t.integer  "price"
-    t.string   "maker",      limit: 255
-    t.string   "model",      limit: 255
-    t.string   "dimensions", limit: 255
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.string   "maker"
+    t.string   "model"
+    t.string   "mb_compatibility"
+    t.string   "front_ports"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
   end
 
 end

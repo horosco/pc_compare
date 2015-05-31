@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @tower.price %>
+</p>
+
+<p>
+  <strong>Maker:</strong>
+  <%= @tower.maker %>
+</p>
+
+<p>
+  <strong>Model:</strong>
+  <%= @tower.model %>
+</p>
+
+<p>
+  <strong>Mb compatibility:</strong>
+  <%= @tower.mb_compatibility %>
+</p>
+
+<p>
+  <strong>Front ports:</strong>
+  <%= @tower.front_ports %>
+</p>
+
+<%= link_to 'Edit', edit_tower_path(@tower) %> |
+<%= link_to 'Back', towers_path %>
