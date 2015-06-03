@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing PC Builds</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Price</th>
+      <th>Motherboard</th>
+      <th>Cpu</th>
+      <th>Gpu</th>
+      <th>DRAM</th>
+      <th>SSD</th>
+      <th>HDD</th>
+      <th>Power Supply</th>
+      <th>Tower</th>
+      <th colspan="5"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pc_builds.each do |build| %>
+      <tr>
+        <td><%= build[:price] %></td>
+        <td><%= build[:motherboard].model %></td>
+        <td><%= build[:cpu].name %></td>
+        <td><%= "#{build[:gpu].name} #{build[:gpu].cuda_cores} #{build[:gpu].memory_size}" %></td>
+	<td><%= build[:dram].model %></td>
+        <td><%= "#{build[:ssd].model} #{build[:ssd].size}" %></td>
+        <td><%= "#{build[:hdd].model} #{build[:hdd].size}" %></td>
+	<td><%= build[:powersupply].model %></td>
+        <td><%= build[:tower].model %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
