@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  root 'base_pages#home'
+#  get 'base_pages/home'
+
+  get 'base_pages/help'
+
   resources :towers
 
   resources :powersupplies
