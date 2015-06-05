@@ -12,6 +12,10 @@
   <% end %>
 
   <div class="field">
+    <%= f.label :select %><br>
+    <%= f.text_field :select%>
+  </div>
+  <div class="field">
     <%= f.label :price %><br>
     <%= f.number_field :price %>
   </div>
@@ -66,6 +70,14 @@
   <div class="field">
     <%= f.label :pcie2x16_ports %><br>
     <%= f.number_field :pcie2x16_ports %>
+  </div>
+  <div class="field">
+    <%= f.label :pcie2x1_ports %><br>
+    <%= f.number_field :pcie2x1_ports %>
+  </div>
+  <div class="field">
+    <%= f.label :pciex1_ports %><br>
+    <%= f.number_field :pciex1_ports %>
   </div>
   <div class="field">
     <%= f.label :pcie_ports %><br>

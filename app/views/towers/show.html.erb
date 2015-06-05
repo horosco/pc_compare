@@ -1,6 +1,11 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <strong>Select:</strong>
+  <%= @tower.select %>
+</p>
+
+<p>
   <strong>Price:</strong>
   <%= @tower.price %>
 </p>
@@ -26,4 +31,4 @@
 </p>
 
 <%= link_to 'Edit', edit_tower_path(@tower) %> |
-<%= link_to 'Back', towers_path %>
+<%= link_to 'See all Towers', towers_path %>

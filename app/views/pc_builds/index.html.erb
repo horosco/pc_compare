@@ -2,9 +2,119 @@
 
 <h1>Listing PC Builds</h1>
 
+<!--<script type="text/javascript" charset="utf-8">-->
+<%= javascript_tag do %>
+  window.pc_build_names     = <%= raw @pc_build_names.to_json %>;
+  window.pc_build_prices    = <%= raw @pc_build_prices.to_json %>;
+  window.motherboard_prices = <%= raw @motherboard_prices.to_json %>;
+  window.cpu_prices         = <%= raw @cpu_prices.to_json %>;
+  window.gpu_prices         = <%= raw @gpu_prices.to_json %>;
+  window.dram_prices        = <%= raw @dram_prices.to_json %>;
+  window.ssd_prices         = <%= raw @ssd_prices.to_json %>;
+  window.hdd_prices         = <%= raw @hdd_prices.to_json %>;
+  window.powersupply_prices = <%= raw @powersupply_prices.to_json %>;
+  window.tower_prices       = <%= raw @tower_prices.to_json %>;
+<% end %>
+
+<script type="text/javascript" charset="utf-8">
+  $(function () {
+    $('#container').highcharts({
+        chart: {
+            type: 'area'
+        },
+        title: {
+            text: 'PC Build Variations'
+        },
+//        subtitle: {
+//            text: 'Source: The Interwebs'
+//        },
+        xAxis: {
+            categories: pc_build_names, //['1750', '1800', '1850', '1900', '1950', '1999', '2050'],
+            tickmarkPlacement: 'on',
+            title: {
+                enabled: false
+            }
+        },
+        yAxis: {
+            title: {
+                text: 'Dollars'//'Billions'
+            },
+            labels: {
+                formatter: function () {
+                    return this.value; /// 1000;
+                }
+            }
+        },
+        tooltip: {
+            shared: true,
+            valueSuffix: 'dollars'//' millions'
+        },
+        plotOptions: {
+            area: {
+                stacking: 'normal',
+                lineColor: '#666666',
+                lineWidth: 1,
+                marker: {
+                    lineWidth: 1,
+                    lineColor: '#666666'
+                }
+            }
+        },
+//        series: [{
+//            name: 'Motherboard',//'Asia',
+//            data: motherboard_prices //[502, 635, 809, 947, 1402, 3634, 5268]
+//        }, {
+//            name: 'Africa',
+//            data: [106, 107, 111, 133, 221, 767, 1766]
+//        }, {
+//            name: 'Europe',
+//            data: [163, 203, 276, 408, 547, 729, 628]
+//        }, {
+//            name: 'America',
+//            data: [18, 31, 54, 156, 339, 818, 1201]
+//        }, {
+//            name: 'Oceania',
+//            data: [2, 2, 2, 6, 13, 30, 46]
+//        }]
+
+        series: [{
+            name: 'Motherboard',//'Asia',
+            data: motherboard_prices //[502, 635, 809, 947, 1402, 3634, 5268]
+        }, {
+            name: 'CPU',//'Africa',
+            data: cpu_prices //[106, 107, 111, 133, 221, 767, 1766]
+        }, {
+            name: 'GPU',//'Europe',
+            data: gpu_prices //[163, 203, 276, 408, 547, 729, 628]
+        }, {
+            name: 'DRAM',//'America',
+            data: dram_prices //[18, 31, 54, 156, 339, 818, 1201]
+        }, {
+            name: 'SSD',//'Oceania',
+            data: ssd_prices //[2, 2, 2, 6, 13, 30, 46]
+        }, {
+            name: 'HDD',//'America',
+            data: hdd_prices //[18, 31, 54, 156, 339, 818, 1201]
+        }, {
+            name: 'Power Supply',//'America',
+            data: powersupply_prices //[18, 31, 54, 156, 339, 818, 1201]
+        }, {
+            name: 'Tower',//'America',
+            data: tower_prices //[18, 31, 54, 156, 339, 818, 1201]
+        }]
+    });
+  });
+<!--(JQuery);-->
+</script>
+
+
+<div id="container" style="width:1000px; height:500px;"></div>
+
+
 <table class="table table-striped table-bordered table-condensed">
   <thead>
     <tr>
+      <th>Build #</th>
       <th>Price</th>
       <th>Motherboard</th>
       <th>Cpu</th>
@@ -21,6 +131,7 @@
   <tbody>
     <% @pc_builds.each do |build| %>
       <tr>
+	<td><%= build[:build_id] %></td>
         <td><%= build[:price] %></td>
         <td><%= build[:motherboard].model %></td>
         <td><%= build[:cpu].name %></td>

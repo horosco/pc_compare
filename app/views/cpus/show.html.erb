@@ -1,6 +1,10 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <strong>Select:</strong>
+  <%= @cpu.select %>
+</p>
+<p>
   <strong>Price:</strong>
   <%= @cpu.price %>
 </p>
@@ -100,4 +104,4 @@
 </p>
 
 <%= link_to 'Edit', edit_cpu_path(@cpu) %> |
-<%= link_to 'Back', cpus_path %>
+<%= link_to 'See all Cpus', cpus_path %>

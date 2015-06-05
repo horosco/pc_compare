@@ -69,6 +69,6 @@ class DramsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def dram_params
-      params.require(:dram).permit(:price, :maker, :series, :model, :dram_type, :size, :speed, :cas_latency, :timing, :voltage, :ecc_support, :notes)
+      params.require(:dram).permit(:select, :price, :maker, :series, :model, :dram_type, :size, :speed, :cas_latency, :timing, :voltage, :ecc_support, :notes)
     end
 end

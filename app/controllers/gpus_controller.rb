@@ -69,6 +69,6 @@ class GpusController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def gpu_params
-      params.require(:gpu).permit(:price, :name, :maker, :model, :interface, :gpu_ver, :core_clock, :boost_clock, :cuda_cores, :mem_clock, :memory_size, :mem_interface, :mem_type, :directx_support, :opengl_support, :hdmi_ports, :dvi_i_ports, :dvi_d_ports, :max_resolution, :sli_support, :cooler, :system_reqs)
+      params.require(:gpu).permit(:select, :price, :name, :maker, :model, :interface, :gpu_ver, :core_clock, :boost_clock, :cuda_cores, :mem_clock, :memory_size, :mem_interface, :mem_type, :directx_support, :opengl_support, :hdmi_ports, :dvi_i_ports, :dvi_d_ports, :max_resolution, :sli_support, :cooler, :system_reqs)
     end
 end

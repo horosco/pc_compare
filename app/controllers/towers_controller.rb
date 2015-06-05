@@ -69,6 +69,6 @@ class TowersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def tower_params
-      params.require(:tower).permit(:price, :maker, :model, :mb_compatibility, :front_ports)
+      params.require(:tower).permit(:select, :price, :maker, :model, :mb_compatibility, :front_ports)
     end
 end

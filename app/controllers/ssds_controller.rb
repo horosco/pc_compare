@@ -69,6 +69,6 @@ class SsdsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def ssd_params
-      params.require(:ssd).permit(:price, :name, :model, :form_factor, :size, :connection)
+      params.require(:ssd).permit(:select, :price, :name, :model, :form_factor, :size, :connection)
     end
 end

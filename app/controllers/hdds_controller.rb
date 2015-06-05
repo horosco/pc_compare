@@ -69,6 +69,6 @@ class HddsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def hdd_params
-      params.require(:hdd).permit(:price, :maker, :series, :model, :size, :interface, :notes)
+      params.require(:hdd).permit(:select, :price, :maker, :series, :model, :size, :interface, :notes)
     end
 end

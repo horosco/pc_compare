@@ -1,6 +1,11 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <strong>Select:</strong>
+  <%= @motherboard.select %>
+</p>
+
+<p>
   <strong>Price:</strong>
   <%= @motherboard.price %>
 </p>
@@ -71,6 +76,16 @@
 </p>
 
 <p>
+  <strong>Pcie2x1 ports:</strong>
+  <%= @motherboard.pcie2x1_ports %>
+</p>
+
+<p>
+  <strong>Pciex1 ports:</strong>
+  <%= @motherboard.pciex1_ports %>
+</p>
+
+<p>
   <strong>Mini card slots:</strong>
   <%= @motherboard.mini_card_slots %>
 </p>
@@ -106,4 +121,4 @@
 </p>
 
 <%= link_to 'Edit', edit_motherboard_path(@motherboard) %> |
-<%= link_to 'Back', motherboards_path %>
+<%= link_to 'See all Motherboards', motherboards_path %>

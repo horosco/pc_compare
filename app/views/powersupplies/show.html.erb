@@ -1,6 +1,10 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <strong>Select:</strong>
+  <%= @powersupply.select %>
+</p>
+<p>
   <strong>Price:</strong>
   <%= @powersupply.price %>
 </p>
@@ -61,4 +65,4 @@
 </p>
 
 <%= link_to 'Edit', edit_powersupply_path(@powersupply) %> |
-<%= link_to 'Back', powersupplies_path %>
+<%= link_to 'See all Power Supplies', powersupplies_path %>

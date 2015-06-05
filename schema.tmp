@@ -96,4 +96,18 @@ tower
   maker
   model
   dimensions
+
+[
+{"id":1,"name":"core i7-4790k","model":"bx80646i74790k","socket":"lga 1150","cores":4,"threads":8,"operating_frequency":"4.0GHz","max_frequency":"4.4GHz","l2_cache":"4 x 256KB","l3_cache":"8MB","tech_node":"22nm","supports_64bits":"yes","supports_hyper_threading":"yes","supports_virtualization":"yes","integrated_graphics":"intel hd graphics 4600","graphics_base_frequency":"350Mhz","graphics_max_frequency":"1.25GHz","pcie_rev":"3.0","max_pcie_lanes":16,"cooling_device":"heatsink and fan included","url":"http://localhost:3000/cpus/1.json"},
+
+{"id":2,"name":"core i7-5960x","model":"bx80648i75960x","socket":"lga 2011-v3","cores":8,"threads":16,"operating_frequency":"3.0GHz","max_frequency":"3.5GHz","l2_cache":"8 x 256KB","l3_cache":"20MB","tech_node":"22nm","supports_64bits":"yes","supports_hyper_threading":"yes","supports_virtualization":"yes","integrated_graphics":"","graphics_base_frequency":"","graphics_max_frequency":"","pcie_rev":"3.0","max_pcie_lanes":40,"cooling_device":"TDP 140W, cooling device not included","url":"http://localhost:3000/cpus/2.json"},
+
+{"id":3,"name":"core i7-5930k","model":"bx80648i75930k","socket":"lga 2011-v3","cores":6,"threads":12,"operating_frequency":"3.5GHz","max_frequency":"3.7GHz","l2_cache":"6 x 256KB","l3_cache":"15MB","tech_node":"22nm","supports_64bits":"yes","supports_hyper_threading":"yes","supports_virtualization":"yes","integrated_graphics":"","graphics_base_frequency":"","graphics_max_frequency":"","pcie_rev":"3.0","max_pcie_lanes":40,"cooling_device":"TDP 140W, cooling device not included","url":"http://localhost:3000/cpus/3.json"},
+
+{"id":4,"name":"core i7-5820k","model":"bx80648i75820k","socket":"lga 2011-v3","cores":6,"threads":12,"operating_frequency":"3.3GHz","max_frequency":"3.6GHz","l2_cache":"6 x 256KB","l3_cache":"15MB","tech_node":"22nm","supports_64bits":"yes","supports_hyper_threading":"yes","supports_virtualization":"yes","integrated_graphics":"","graphics_base_frequency":"","graphics_max_frequency":"","pcie_rev":"3.0","max_pcie_lanes":28,"cooling_device":"TDP 140W, cooling device not included","url":"http://localhost:3000/cpus/4.json"},
+
+{"id":5,"name":"core i7-4790","model":"bx80646i74790","socket":"lga 1150","cores":4,"threads":8,"operating_frequency":"3.6GHz","max_frequency":"4.0GHz","l2_cache":"4 x 256KB","l3_cache":"8MB","tech_node":"22nm","supports_64bits":"yes","supports_hyper_threading":"yes","supports_virtualization":"yes","integrated_graphics":"intel hd graphics 4600","graphics_base_frequency":"","graphics_max_frequency":"","pcie_rev":"","max_pcie_lanes":null,"cooling_device":"84W, heatsink and fan included","url":"http://localhost:3000/cpus/5.json"},
+
+{"id":6,"name":"core i7-4790s","model":"bx80646i74790s","socket":"lga 1150","cores":4,"threads":8,"operating_frequency":"3.2GHz","max_frequency":"4.0GHz","l2_cache":"4 x 256KB","l3_cache":"8MB","tech_node":"22nm","supports_64bits":"yes","supports_hyper_threading":"yes","supports_virtualization":"yes","integrated_graphics":"intel hd graphics 4600","graphics_base_frequency":"","graphics_max_frequency":"","pcie_rev":"","max_pcie_lanes":null,"cooling_device":"65W, heatsink and fan included","url":"http://localhost:3000/cpus/6.json"}
+]
   

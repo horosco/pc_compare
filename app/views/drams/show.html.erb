@@ -1,6 +1,11 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <strong>Select:</strong>
+  <%= @dram.select %>
+</p>
+
+<p>
   <strong>Price:</strong>
   <%= @dram.price %>
 </p>
@@ -61,4 +66,4 @@
 </p>
 
 <%= link_to 'Edit', edit_dram_path(@dram) %> |
-<%= link_to 'Back', drams_path %>
+<%= link_to 'See all DRAMs', drams_path %>

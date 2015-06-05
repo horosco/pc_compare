@@ -1,6 +1,11 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <strong>Select:</strong>
+  <%= @ssd.select %>
+</p>
+
+<p>
   <strong>Price:</strong>
   <%= @ssd.price %>
 </p>
@@ -31,4 +36,4 @@
 </p>
 
 <%= link_to 'Edit', edit_ssd_path(@ssd) %> |
-<%= link_to 'Back', ssds_path %>
+<%= link_to 'See all SSDs', ssds_path %>

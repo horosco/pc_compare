@@ -1,6 +1,11 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <strong>Select:</strong>
+  <%= @gpu.select %>
+</p>
+
+<p>
   <strong>Price:</strong>
   <%= @gpu.price %>
 </p>
@@ -111,4 +116,4 @@
 </p>
 
 <%= link_to 'Edit', edit_gpu_path(@gpu) %> |
-<%= link_to 'Back', gpus_path %>
+<%= link_to 'See all GPUs', gpus_path %>
